@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question_navigation"
+    app:startDestination="@id/questionIndexFragment">
+
+    <fragment
+        android:id="@+id/questionIndexFragment"
+        android:name="com.nicklaus.niloedu.question.view.QuestionIndexFragment"
+        android:label="fragment_question_index"
+        tools:layout="@layout/fragment_question_index" >
+        <action
+            android:id="@+id/action_questionIndexFragment_to_questionExamFragment"
+            app:destination="@id/questionExamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionExamFragment"
+        android:name="com.nicklaus.niloedu.question.view.QuestionExamFragment"
+        android:label="fragment_question_exam"
+        tools:layout="@layout/fragment_question_exam" >
+        <action
+            android:id="@+id/action_questionExamFragment_to_questionResultFragment"
+            app:destination="@id/questionResultFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_questionExamFragment_to_questionIndexFragment"
+            app:destination="@id/questionIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionResultFragment"
+        android:name="com.nicklaus.niloedu.question.view.QuestionResultFragment"
+        android:label="fragment_question_result"
+        tools:layout="@layout/fragment_question_result" >
+        <action
+            android:id="@+id/action_questionResultFragment_to_questionIndexFragment"
+            app:destination="@id/questionIndexFragment" />
+    </fragment>
+</navigation>

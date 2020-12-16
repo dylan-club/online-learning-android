@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/person_info_nav"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="@string/home_person_info_name" />
+
+        <item
+            android:id="@+id/person_qa_nav"
+            android:icon="@drawable/ic_baseline_assessment_24"
+            android:title="@string/home_person_qa_name" />
+
+        <item
+            android:id="@+id/person_shop_nav"
+            android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            android:title="@string/home_person_shop_name" />
+    </group>
+</menu>

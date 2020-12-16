@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">NiloEdu</string>
+
+    <!--login activity-->
+    <string name="login_img_description">login image</string>
+    <string name="login_tab_text">登录</string>
+    <string name="register_tab_text">注册</string>
+
+    <!--login fragment-->
+    <string name="login_input_nickname">用户名</string>
+    <string name="login_input_password">密码</string>
+    <string name="login_button_text">登录</string>
+    <string name="toast_login_success_text">登录成功</string>
+    <string name="server_network_error_message">无法连接服务器，请稍后再试！</string>
+
+    <!--register fragment-->
+    <string name="register_input_nickname">输入昵称</string>
+    <string name="register_input_email">邮箱地址</string>
+    <string name="register_input_password">输入密码</string>
+    <string name="register_input_confirm">确认密码</string>
+    <string name="register_button_text">注册</string>
+    <string name="toast_register_success_text">注册成功，请登录！</string>
+    <string name="register_input_is_empty">输入不能为空，请重新输入！</string>
+    <string name="register_input_password_is_not_equal_to_confirm">密码前后输入不一致，请重新输入！</string>
+
+    <!--main activity-->
+    <!--main activity bottom navigation view-->
+    <string name="bottom_menu_item_video">在线视频</string>
+    <string name="bottom_menu_item_question">在线答题</string>
+    <string name="bottom_menu_item_shop">积分商城</string>
+    <string name="bottom_menu_item_calculator">口算游戏</string>
+    <!--main activity sidebar navigation view-->
+    <string name="home_person_info_name">个人信息修改</string>
+    <string name="home_person_qa_name">在线答题记录</string>
+    <string name="home_person_shop_name">积分兑换记录</string>
+    <string name="default_credit">积分：888</string>
+    <string name="default_nickname">用户名：nicklaus</string>
+    <string name="home_quit_button_text">退出</string>
+    <string name="home_back_button_text">返回</string>
+    <string name="home_quit_dialog_message">是否确认退出账号?</string>
+    <string name="home_quit_dialog_positive_button_text">确定</string>
+    <string name="home_quit_dialog_negative_button_text">取消</string>
+    <string name="home_quit_dialog_toast_text">您可以尝试口算游戏放松一下~</string>
+    <string name="main_activity_login_first_text">立即登录</string>
+    <!--Main content of main activity-->
+    <string name="home_please_login_first_message">请先登录！</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--calculator index fragment-->
+    <string name="calculator_index_message">口算游戏</string>
+    <string name="calculator_index_image_info">calculator index image</string>
+    <string name="calculator_index_button_text">开始游戏</string>
+    <string name="calculator_index_high_score_text">最高分：%d</string>
+
+    <!--calculator play fragment-->
+    <string name="calculator_play_question_mark">\?</string>
+    <string name="calculator_play_equal_symbol">=</string>
+    <string name="calculator_play_input_indicator">请输入答案</string>
+    <string name="calculator_play_answer_correct_message">回答正确，请继续！</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="buttonClear">清除</string>
+    <string name="button0">0</string>
+    <string name="buttonSubmit">确定</string>
+    <string name="calculator_play_title_text">挑战中</string>
+    <string name="calculator_play_back_image">back image</string>
+    <string name="calculator_play_current_score">当前得分：%d</string>
+    <string name="calculator_play_toast_warning">请继续答题！</string>
+
+    <!--calculator lose fragment-->
+    <string name="calculator_lose_image_message">lose image</string>
+    <string name="calculator_lose_message">挑战失败！</string>
+    <string name="calculator_lose_back_index">返回</string>
+    <string name="calculator_lose_title_text">很遗憾，挑战失败</string>
+    <string name="calculator_lose_back_image">back image</string>
+    <string name="calculator_lose_current_score">你的得分：%d</string>
+
+    <!--calculator win fragment-->
+    <string name="calculator_win_image_message">win image</string>
+    <string name="calculator_win_message">挑战成功！</string>
+    <string name="calculator_win_back_index">返回</string>
+    <string name="calculator_win_title_text">恭喜您，挑战成功</string>
+    <string name="calculator_win_new_record">新记录：%d</string>
+
+    <!--dialog widget-->
+    <string name="quit_dialog_title">您确定要退出吗？</string>
+    <string name="quit_dialog_positive_message">确定</string>
+    <string name="quit_dialog_negative_message">取消</string>
+
+    <!--video index fragment-->
+    <string name="video_index_waiting_text">精彩内容马上呈现！</string>
+    <string name="video_index_toast_server_error">服务器似乎有点问题…</string>
+    <string name="video_index_toast_network_error">网络似乎有点问题…</string>
+    <string name="video_index_video_image">video image</string>
+
+    <!--video play fragment-->
+    <string name="video_play_back_image">back image</string>
+    <string name="video_play_toast_back_to_index_image">再看看，说不定有新的收获哦！</string>
+
+    <!--question index fragment-->
+    <string name="question_index_textView">文学常识</string>
+    <string name="question_index_cover_image">cover image</string>
+    <string name="question_index_button_text">立即答题</string>
+
+    <!--question exam fragment-->
+    <string name="question_exam_back_image">back image</string>
+    <string name="question_exam_back_to_index_text">答题中</string>
+    <string name="question_exam_back_toast_message">请继续答题！</string>
+    <string name="question_exam_button_text">交卷</string>
+    <!--submit dialog-->
+    <string name="submit_dialog_title_message">您确定要交卷吗？</string>
+    <string name="submit_dialog_positive_message">确定</string>
+    <string name="submit_dialog_negative_message">取消</string>
+
+    <!--question result fragment-->
+    <string name="question_result_cover_image">cover image</string>
+    <string name="question_result_back_image">back image</string>
+    <string name="question_answer_result_hint_textView">正确答案:</string>
+    <string name="question_result_user_hint_textView">您的答案:</string>
+    <string name="question_result_user_score_text">您的得分为：%d</string>
+    <string name="question_result_back_text">返回</string>
+
+    <!--shop index fragment-->
+    <string name="shop_index_goods_cover_image">cover image</string>
+    <string name="goods_credit_title_text">&#160;积分</string>
+    <string name="goods_amount_title_text">库存&#160;</string>
+
+    <!--shop detail fragment-->
+    <string name="shop_detail_goods_cover_image">cover image</string>
+    <string name="shop_detail_shop_button_text">立即兑换</string>
+    <string name="shop_detail_back_to_index_text">返回</string>
+    <string name="shop_detail_back_to_index_image">back image</string>
+
+</resources>

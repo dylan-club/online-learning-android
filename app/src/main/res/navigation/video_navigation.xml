@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_navigation"
+    app:startDestination="@id/videoIndexFragment">
+    <fragment
+        android:id="@+id/videoIndexFragment"
+        android:name="com.nicklaus.niloedu.video.view.VideoIndexFragment"
+        android:label="fragment_video_index"
+        tools:layout="@layout/fragment_video_index" >
+        <action
+            android:id="@+id/action_videoIndexFragment_to_videoPlayFragment"
+            app:destination="@id/videoPlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoPlayFragment"
+        android:name="com.nicklaus.niloedu.video.view.VideoPlayFragment"
+        android:label="fragment_video_play"
+        tools:layout="@layout/fragment_video_play" >
+        <action
+            android:id="@+id/action_videoPlayFragment_to_videoIndexFragment"
+            app:destination="@id/videoIndexFragment" />
+    </fragment>
+</navigation>

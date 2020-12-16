@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/videoFragment">
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.nicklaus.niloedu.video.view.VideoFragment"
+        android:label="@string/bottom_menu_item_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.nicklaus.niloedu.question.view.QuestionFragment"
+        android:label="@string/bottom_menu_item_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.nicklaus.niloedu.shop.view.ShopFragment"
+        android:label="@string/bottom_menu_item_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/pluginFragment"
+        android:name="com.nicklaus.niloedu.plugin.view.PluginFragment"
+        android:label="@string/bottom_menu_item_calculator"
+        tools:layout="@layout/fragment_plugin" />
+</navigation>

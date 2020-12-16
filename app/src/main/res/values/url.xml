@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video_list_url">
+        http://172.22.112.237:8008/serviceVideo/video/findVideoList
+    </string>
+    <string name="question_list_url">
+        http://172.22.112.237:8008/serviceQuestion/question/getRandomQuestionList
+    </string>
+    <string name="user_register_url">
+        http://172.22.112.237:8008/serviceUser/user/register
+    </string>
+    <string name="user_login_url">
+        http://172.22.112.237:8008/serviceUser/user/login
+    </string>
+    <string name="user_getLoginInfo_url">
+        http://172.22.112.237:8008/serviceUser/user/getLoginInfo
+    </string>
+    <string name="goods_list_url">
+        http://172.22.112.237:8008/serviceShop/goods/getGoodsList
+    </string>
+</resources>

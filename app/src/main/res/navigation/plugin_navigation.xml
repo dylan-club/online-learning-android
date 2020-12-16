@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/plugin_navigation"
+    app:startDestination="@id/calculatorIndexFragment">
+
+    <fragment
+        android:id="@+id/calculatorIndexFragment"
+        android:name="com.nicklaus.niloedu.plugin.view.CalculatorIndexFragment"
+        android:label="fragment_calculator_index"
+        tools:layout="@layout/fragment_calculator_index" >
+        <action
+            android:id="@+id/action_calculatorIndexFragment_to_calculatorPlayFragment"
+            app:destination="@id/calculatorPlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorPlayFragment"
+        android:name="com.nicklaus.niloedu.plugin.view.CalculatorPlayFragment"
+        android:label="fragment_calculator_play"
+        tools:layout="@layout/fragment_calculator_play" >
+        <action
+            android:id="@+id/action_calculatorPlayFragment_to_calculatorWinFragment"
+            app:destination="@id/calculatorWinFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_calculatorPlayFragment_to_calculatorLoseFragment"
+            app:destination="@id/calculatorLoseFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_calculatorPlayFragment_to_calculatorIndexFragment"
+            app:destination="@id/calculatorIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorWinFragment"
+        android:name="com.nicklaus.niloedu.plugin.view.CalculatorWinFragment"
+        android:label="fragment_calculator_win"
+        tools:layout="@layout/fragment_calculator_win" >
+        <action
+            android:id="@+id/action_calculatorWinFragment_to_calculatorIndexFragment"
+            app:destination="@id/calculatorIndexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorLoseFragment"
+        android:name="com.nicklaus.niloedu.plugin.view.CalculatorLoseFragment"
+        android:label="fragment_calculator_lose"
+        tools:layout="@layout/fragment_calculator_lose" >
+        <action
+            android:id="@+id/action_calculatorLoseFragment_to_calculatorIndexFragment"
+            app:destination="@id/calculatorIndexFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="15dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <TextView
+        android:id="@+id/answerHintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_result_user_hint_textView"
+        android:textColor="#80CBC4"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toBottomOf="@+id/userAnswerTextView"
+        app:layout_constraintEnd_toStartOf="@+id/userAnswerTextView"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userAnswerTextView"
+        tools:text="您的答案:" />
+
+    <TextView
+        android:id="@+id/userAnswerTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#80CBC4"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toTopOf="@+id/correctAnswerTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/answerHintTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultTitleTextView"
+        tools:text="这是一个占位符说明" />
+
+    <TextView
+        android:id="@+id/correctHintTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_answer_result_hint_textView"
+        android:textColor="#80CBC4"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toBottomOf="@+id/correctAnswerTextView"
+        app:layout_constraintEnd_toStartOf="@+id/correctAnswerTextView"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/correctAnswerTextView"
+        tools:text="正确答案:" />
+
+    <TextView
+        android:id="@+id/correctAnswerTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textColor="#80CBC4"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/correctHintTextView"
+        app:layout_constraintStart_toStartOf="@+id/resultTitleTextView"
+        tools:text="这是一个占位符说明" />
+
+    <TextView
+        android:id="@+id/resultTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toTopOf="@+id/userAnswerTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/resultNumberTextView"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="题目描述" />
+
+    <TextView
+        android:id="@+id/resultNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:textSize="@dimen/normal_font"
+        app:layout_constraintBottom_toBottomOf="@+id/resultTitleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/resultTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resultTitleTextView"
+        tools:text="序号" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctHintTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
